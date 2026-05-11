@@ -1,10 +1,11 @@
 public class TaskOne{
-    public static void main(String[] args){
+
+    public static int[] getAndDisplayArray(int num){
         java.util.Scanner inputCollector = new java.util.Scanner(System.in);
-        
         int[] arrayList = new int[10];
+        int numbers = 0;
         
-        for(int count = 0; count < arrayList.length; count++){
+        for(int count = 0; count <= arrayList.length; count++){
             System.out.print("enter a number: ");
             int number = inputCollector.nextInt();
             arrayList[count] = number;
@@ -13,5 +14,13 @@ public class TaskOne{
         for(int index = 0; index < arrayList.length; index++){
             System.out.print(arrayList[index] + " ");
         }
+        
+        return arrayList;
     }
+    
 }
+
+
+// javac -cp "junit-platform-console-standalone-1.11.0.jar" out TestFile.java CodeFile.java
+
+// java -cp "junit-platform-console-standalone-1.11.0.jar:out" org-junit-platform-console.ConsoleLauncher --scan-class-path
