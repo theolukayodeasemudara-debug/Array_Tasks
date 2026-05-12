@@ -13,14 +13,10 @@ public class ReverseArray{
             System.out.print("enter a number: ");
             int number = inputCollector.nextInt();
             arrayList[count] = number;
-            // number = arrayList[count].length() - 1;
         }
         
-        for(int index = 0; index < arrayList.length; index++){
+        for(int index = arrayList.length - 1; index >= 0; index--){
             System.out.print(arrayList[index] + " ");
         }
-        
-        
-        
     }
 }

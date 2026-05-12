@@ -30,6 +30,6 @@ public class DuplicateArrayElementsElimination{
         for(int index = 0; index < arrayList.length; index++){
             System.out.print(arrayList[index] + " ");
         }
-            System.out.print(numbers[index]);
+        
     }
 }
